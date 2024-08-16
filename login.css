@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('https://example.com/tree.jpeg') no-repeat center center fixed;
+    background: url('myBg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     display: flex;
@@ -11,18 +11,23 @@ body, html {
 }
 
 .content {
-    width: 350px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 40px 30px;
+    width: 500px;
+    background: rgba(22, 22, 22, 0.7);
+    padding: 40px 40px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
     color: #fff;
-    text-align: center;
+    text-align:center;
 }
 
+.label{
+    text-align:left;
+    padding: 20px 20px;
+    margin-bottom: 5px;
+}
 .content .text {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 30px;
     color: #f1f1f1;
 }
@@ -34,13 +39,14 @@ body, html {
 
 .field input {
     width: 100%;
-    padding: 15px 15px 15px 50px;
+    padding: 15px 15px 15px 15px;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 12px;
     border: none;
     outline: none;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(26, 224, 224, 0.1);
     color: #fff;
+    text-align: center;
 }
 
 .field input::placeholder {
@@ -94,7 +100,7 @@ button:hover {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: background 0.3s ease;
+    transition:  0.3s ease;
 }
 
 .facebook {
@@ -118,7 +124,7 @@ button:hover {
 .custom-radio {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1px;
     color: #f1f1f1;
 }
 

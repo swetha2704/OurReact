@@ -1,55 +1,48 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login Form</title>
         <link rel="stylesheet" href="login.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <div class="content">
             <div class="text">Login Page</div>
             <form action="#">
                 <div class="field">
-                    <span class="fa-fa-user"></span>
-                    <input type="text" placeholder="email" required>
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Email" required>
                 </div>
                 <div class="field">
-                    <span class="fa-fa-lock"></span>
-                    <input type="text" placeholder="password" required>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
                 </div>
                 <div class="field">
-                    <span class="fa-fa-lock"></span>
-                    <input type="text" placeholder="ph number" required>
+                    <i class="fas fa-phone"></i>
+                    <input type="text" placeholder="Phone Number" required>
                 </div>
-                 --  <label>Enter your gender</label><br>
-                    <input type="radio" id="gender" name="gender" value="male"/>Male  <br>  
-                    <input type="radio" id="gender" name="gender" value="female"/>Female
-<br/>    
-                    <input type="radio" id="gender" name="gender" value="others"/>others <br/>
-                    <label>Enter your gender</label><br>
-                    <label class="custom-radio">
-                        <input type="radio" name="option" value="1">
-                        <span class="radio-btn"></span>
-                        male
-                    </label><br>
-                    <label class="custom-radio">
-                        <input type="radio" name="option" value="2">
-                        <span class="radio-btn"></span>
-                        female
-                    </label><br>
-                    <label class="custom-radio">
-                        <input type="radio" name="option" value="3">
-                        <span class="radio-btn"></span>
-                        other
-                    </label> 
-                 <button> login</button>
+                <div class="label">
+                <label>Enter your gender</label><br></div>
+                <label class="custom-radio">
+                    <input type="radio" name="gender" value="male"> 
+                    <span class="radio-btn"></span> Male
+                </label><br>
+                <label class="custom-radio">
+                    <input type="radio" name="gender" value="female"> 
+                    <span class="radio-btn"></span> Female
+                </label><br>
+                <label class="custom-radio">
+                    <input type="radio" name="gender" value="other"> 
+                    <span class="radio-btn"></span> Other
+                </label><br>
+
+                <button type="submit">Login</button>
+                
                 <div class="optional"> OR</div>
 
-              <div class="icon-button">
-                    <span class="facebook"><i class="fa-fa-facebook"></i></span>facebook
-                    <span class="google"><i class="fa-fa-google"></i></span>google
+                <div class="icon-button">
+                    <span class="facebook"><i class="fab fa-facebook"></i></span>
+                    <span class="google"><i class="fab fa-google"></i></span>
                 </div>
 
             </form>
