@@ -1,0 +1,106 @@
+/* General reset for padding, margin, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Section container */
+.section-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card container */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 260px; /* Slightly wider for better layout */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container styling */
+.image-container, .image-container2 {
+    width: 100%;
+    height: 180px; /* Fixed height for all images */
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img,
+.image-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Product information styling */
+.info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.price {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Flexbox container for the second product */
+.image-container2,
+.info {
+    flex: 1;
+}
